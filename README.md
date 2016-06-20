@@ -46,7 +46,7 @@ The interface design of **twentyfour95** is modern and yet simple in a way that 
 
 ---------------------------------------------------------------------------------------------------------------------
 
-#####Telluride | 1906-TEL-0009
+#####Telluride | 1706-TEL-00009
 
 **Copyright © 2016 NEOTechnica Corporation  
 All rights reserved.**
