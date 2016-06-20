@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="DS-Digital.ttf">
+            <string>DS-Digital</string>
+            <string>DS-Digital</string>
+            <string>DS-Digital</string>
+            <string>DS-Digital</string>
+            <string>DS-Digital</string>
+            <string>DS-Digital</string>
+            <string>DS-Digital</string>
+            <string>DS-Digital</string>
+            <string>DS-Digital</string>
+            <string>DS-Digital</string>
+            <string>DS-Digital</string>
+            <string>DS-Digital</string>
+        </mutableArray>
+        <mutableArray key="Digital-7.ttf">
+            <string>Digital-7</string>
+            <string>Digital-7</string>
+            <string>Digital-7</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--Main Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="MC" title="Main Controller" id="BYZ-38-t0r" customClass="MC" customModule="twentyfour95" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button hidden="YES" opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Iy2-iN-4qS">
+                                <rect key="frame" x="354" y="699" width="50" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <state key="normal" image="NT.png"/>
+                                <connections>
+                                    <action selector="ntButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wCG-gM-JVp"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" id="hju-B1-kbf">
+                                <rect key="frame" x="224" y="706" width="180" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
+                                <state key="normal" title="1.0.0.100">
+                                    <color key="titleColor" red="0.86274509799999999" green="0.86274509799999999" blue="0.87843137250000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="buildButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lmW-lp-MmG"/>
+                                    <outletCollection property="gestureRecognizers" destination="Z94-qB-3sS" appends="YES" id="zVL-oR-wdw"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.6.18" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="PB1-TL-mWf">
+                                <rect key="frame" x="105" y="701" width="100" height="15"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="For testing purposes only." textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Xet-AD-U4B">
+                                <rect key="frame" x="131" y="716" width="280" height="15"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="dZv-RK-Sm6">
+                                <rect key="frame" x="376" y="679" width="35" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <state key="normal" image="NT.png"/>
+                                <connections>
+                                    <action selector="informationButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fPa-TQ-HOd"/>
+                                    <action selector="ntButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Sfc-dG-vgX"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SKU:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4Y8-o7-g2j">
+                                <rect key="frame" x="3" y="716" width="40" height="15"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="13"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bundle Version:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="HXA-0V-kfM">
+                                <rect key="frame" x="3" y="701" width="100" height="15"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="13"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2401-APP-10941" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tGL-A4-eRm">
+                                <rect key="frame" x="37" y="716" width="100" height="15"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Designation:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="GBu-M1-FcF">
+                                <rect key="frame" x="3" y="686" width="79" height="15"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="13"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="INT-TES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="BLC-Tf-dPv">
+                                <rect key="frame" x="85" y="686" width="115" height="15"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Xus-Sr-Vcc">
+                                <rect key="frame" x="131" y="702" width="280" height="15"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="13"/>
+                                <state key="normal" title="Project Code Name: Macintosh">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="codeNameButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="evF-63-FSt"/>
+                                </connections>
+                            </button>
+                            <view alpha="0.60000002384185791" contentMode="scaleToFill" id="IYY-fK-A7D">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view alpha="0.60000002384185791" contentMode="scaleToFill" id="y2A-Zg-FzL">
+                                        <rect key="frame" x="71" y="0.0" width="1" height="20"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view alpha="0.60000002384185791" contentMode="scaleToFill" id="i8d-I1-e5A">
+                                        <rect key="frame" x="343" y="0.0" width="1" height="20"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.6.18" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gDj-Y5-lSz">
+                                        <rect key="frame" x="0.0" y="0.0" width="70" height="20"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="INT-TES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="mzF-OV-dm4">
+                                        <rect key="frame" x="344" y="0.0" width="70" height="20"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2401-APP-0941" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="RH9-c7-qOw">
+                                        <rect key="frame" x="71" y="0.0" width="273" height="20"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="24.95" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" id="kmU-fY-poD">
+                                <rect key="frame" x="148" y="28" width="119" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="50"/>
+                                <color key="textColor" red="0.4941176471" green="0.69019607839999997" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" id="1Fo-Cj-pud">
+                                <rect key="frame" x="192" y="122" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="33"/>
+                                <color key="textColor" red="0.4941176471" green="0.69019607839999997" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="=" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" id="wUT-bC-jrB">
+                                <rect key="frame" x="192" y="184" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="70"/>
+                                <color key="textColor" red="0.4941176471" green="0.69019607839999997" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                            <view contentMode="scaleToFill" id="3k5-jO-JBu">
+                                <rect key="frame" x="87" y="220" width="240" height="167"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$10.82" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" id="cjU-nj-pJl">
+                                        <rect key="frame" x="51" y="43" width="138" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                                        <fontDescription key="fontDescription" name="DS-Digital" family="DS-Digital" pointSize="28"/>
+                                        <color key="textColor" red="0.86274509799999999" green="0.86274509799999999" blue="0.87843137250000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <size key="shadowOffset" width="0.0" height="0.0"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A Grand Total Of" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" id="h9h-Uh-baH">
+                                        <rect key="frame" x="0.0" y="5" width="240" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                                        <fontDescription key="fontDescription" name="DS-Digital" family="DS-Digital" pointSize="30"/>
+                                        <color key="textColor" red="0.4941176471" green="0.69019607839999997" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <size key="shadowOffset" width="0.0" height="0.0"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" id="Ji2-sM-CLX">
+                                        <rect key="frame" x="8" y="82" width="224" height="3"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.23529411764705882" green="0.29019607843137252" blue="0.30980392156862746" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Tip" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" id="OqB-FO-5Y7">
+                                        <rect key="frame" x="20" y="90" width="200" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                                        <fontDescription key="fontDescription" name="DS-Digital" family="DS-Digital" pointSize="30"/>
+                                        <color key="textColor" red="0.4941176471" green="0.69019607839999997" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <size key="shadowOffset" width="0.0" height="0.0"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$1.41" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" id="HBS-EK-Xeb">
+                                        <rect key="frame" x="51" y="128" width="138" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                                        <fontDescription key="fontDescription" name="DS-Digital" family="DS-Digital" pointSize="28"/>
+                                        <color key="textColor" red="0.86274509799999999" green="0.86274509799999999" blue="0.87843137250000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <size key="shadowOffset" width="0.0" height="0.0"/>
+                                    </label>
+                                </subviews>
+                            </view>
+                            <view contentMode="scaleToFill" id="8pm-IM-aoc">
+                                <rect key="frame" x="222" y="424" width="185" height="199"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$1.18" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" id="b0A-Zg-KLW">
+                                        <rect key="frame" x="23" y="46" width="138" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                                        <fontDescription key="fontDescription" name="DS-Digital" family="DS-Digital" pointSize="28"/>
+                                        <color key="textColor" red="0.86274509799999999" green="0.86274509799999999" blue="0.87843137250000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <size key="shadowOffset" width="0.0" height="0.0"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$1" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" id="hjy-ni-NNl">
+                                        <rect key="frame" x="23" y="122" width="138" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                                        <fontDescription key="fontDescription" name="DS-Digital" family="DS-Digital" pointSize="28"/>
+                                        <color key="textColor" red="0.86274509799999999" green="0.86274509799999999" blue="0.87843137250000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <size key="shadowOffset" width="0.0" height="0.0"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="back" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" id="eNx-4v-s4y">
+                                        <rect key="frame" x="42" y="160" width="100" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                                        <fontDescription key="fontDescription" name="DS-Digital" family="DS-Digital" pointSize="30"/>
+                                        <color key="textColor" red="0.4941176471" green="0.69019607839999997" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <size key="shadowOffset" width="0.0" height="0.0"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Or Simply" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" id="QAf-OG-LFZ">
+                                        <rect key="frame" x="32" y="84" width="120" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                                        <fontDescription key="fontDescription" name="DS-Digital" family="DS-Digital" pointSize="30"/>
+                                        <color key="textColor" red="0.4941176471" green="0.69019607839999997" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <size key="shadowOffset" width="0.0" height="0.0"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ask For" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" id="YdS-Vf-n3S">
+                                        <rect key="frame" x="42" y="8" width="100" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                                        <fontDescription key="fontDescription" name="DS-Digital" family="DS-Digital" pointSize="30"/>
+                                        <color key="textColor" red="0.4941176471" green="0.69019607839999997" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <size key="shadowOffset" width="0.0" height="0.0"/>
+                                    </label>
+                                </subviews>
+                            </view>
+                            <view contentMode="scaleToFill" id="dYf-nw-SWT">
+                                <rect key="frame" x="7" y="424" width="185" height="199"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <pickerView contentMode="scaleToFill" id="GpV-uG-iB5">
+                                        <rect key="frame" x="58" y="46" width="70" height="144"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="BYZ-38-t0r" id="gh6-PZ-9ss"/>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="Ka0-9E-mcj"/>
+                                        </connections>
+                                    </pickerView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amount Given" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" id="Pov-0l-ath">
+                                        <rect key="frame" x="12" y="8" width="162" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                                        <fontDescription key="fontDescription" name="DS-Digital" family="DS-Digital" pointSize="30"/>
+                                        <color key="textColor" red="0.4941176471" green="0.69019607839999997" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <size key="shadowOffset" width="0.0" height="0.0"/>
+                                    </label>
+                                </subviews>
+                            </view>
+                            <view contentMode="scaleToFill" id="WzT-Be-beU">
+                                <rect key="frame" x="107" y="86" width="194" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Original Total" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" id="AmU-mt-0uY">
+                                        <rect key="frame" x="6" y="8" width="187" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                                        <fontDescription key="fontDescription" name="DS-Digital" family="DS-Digital" pointSize="29"/>
+                                        <color key="textColor" red="0.4941176471" green="0.69019607839999997" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <size key="shadowOffset" width="0.0" height="0.0"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="$9.41" textAlignment="center" minimumFontSize="17" id="rYU-Em-xv8">
+                                        <rect key="frame" x="19" y="50" width="160" height="29"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="tintColor" red="0.86274509799999999" green="0.86274509799999999" blue="0.87843137250000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" red="0.86274509799999999" green="0.86274509799999999" blue="0.87843137250000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="decimalPad" keyboardAppearance="alert" returnKeyType="done"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="Axr-eE-r3b"/>
+                                        </connections>
+                                    </textField>
+                                </subviews>
+                            </view>
+                            <view contentMode="scaleToFill" id="9aC-22-zW9">
+                                <rect key="frame" x="213" y="86" width="194" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A Tip Of" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" id="75f-S8-w21">
+                                        <rect key="frame" x="12" y="7" width="170" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                                        <fontDescription key="fontDescription" name="DS-Digital" family="DS-Digital" pointSize="29"/>
+                                        <color key="textColor" red="0.4941176471" green="0.69019607839999997" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <size key="shadowOffset" width="0.0" height="0.0"/>
+                                    </label>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" id="3sE-Hg-FIa">
+                                        <rect key="frame" x="22" y="49" width="160" height="29"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <segments>
+                                            <segment title="15%"/>
+                                            <segment title="18%"/>
+                                            <segment title="20%"/>
+                                        </segments>
+                                        <color key="tintColor" red="0.4941176471" green="0.69019607839999997" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="tipOfSegmentedControl:" destination="BYZ-38-t0r" eventType="valueChanged" id="pQ6-08-OAw"/>
+                                        </connections>
+                                    </segmentedControl>
+                                </subviews>
+                            </view>
+                            <view contentMode="scaleToFill" id="qxD-Wx-6Ag">
+                                <rect key="frame" x="7" y="406" width="400" height="3"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.23529411759999999" green="0.2901960784" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.12156862745098039" green="0.12156862745098039" blue="0.12156862745098039" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="a3O-19-B9K" appends="YES" id="KYf-Bl-2jP"/>
+                        </connections>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="414" height="736"/>
+                    <connections>
+                        <outlet property="aGrandTotalOfLabel" destination="h9h-Uh-baH" id="ARe-Mq-70a"/>
+                        <outlet property="aTipOfLabel" destination="75f-S8-w21" id="viu-HF-xBX"/>
+                        <outlet property="amountGivenLabel" destination="Pov-0l-ath" id="AXS-N7-upk"/>
+                        <outlet property="askForLabel" destination="b0A-Zg-KLW" id="KtJ-eh-nE5"/>
+                        <outlet property="askForPlaceholderLabel" destination="YdS-Vf-n3S" id="ptg-PX-WAc"/>
+                        <outlet property="askForRoundedLabel" destination="hjy-ni-NNl" id="gIF-ZH-VPd"/>
+                        <outlet property="backLabel" destination="eNx-4v-s4y" id="id2-zF-Hn4"/>
+                        <outlet property="buildButton" destination="hju-B1-kbf" id="vFT-SO-MXk"/>
+                        <outlet property="bundleVersionLabel" destination="HXA-0V-kfM" id="PAm-ua-mSt"/>
+                        <outlet property="bundleVersionSubtitleLabel" destination="PB1-TL-mWf" id="vPc-oJ-dmD"/>
+                        <outlet property="codeNameButton" destination="Xus-Sr-Vcc" id="QHg-hR-VhY"/>
+                        <outlet property="designationLabel" destination="GBu-M1-FcF" id="d0L-G4-RA7"/>
+                        <outlet property="designationSubtitleLabel" destination="BLC-Tf-dPv" id="a6d-oQ-sAm"/>
+                        <outlet property="equalsLabel" destination="wUT-bC-jrB" id="EDO-BS-RsI"/>
+                        <outlet property="fifthBorderView" destination="9aC-22-zW9" id="Z4l-9P-J0e"/>
+                        <outlet property="firstBorderView" destination="3k5-jO-JBu" id="VQt-dy-cAG"/>
+                        <outlet property="firstSeparatorView" destination="Ji2-sM-CLX" id="ozx-va-j3a"/>
+                        <outlet property="fourthBorderView" destination="WzT-Be-beU" id="ITJ-T2-XpN"/>
+                        <outlet property="grandTotalLabel" destination="cjU-nj-pJl" id="wB4-87-Tpw"/>
+                        <outlet property="informationButton" destination="dZv-RK-Sm6" id="HBh-RH-TqD"/>
+                        <outlet property="longPress" destination="Z94-qB-3sS" id="S5G-Jh-rAy"/>
+                        <outlet property="ntButton" destination="Iy2-iN-4qS" id="c8U-UB-qxO"/>
+                        <outlet property="numberPickerView" destination="GpV-uG-iB5" id="KTy-V8-0Bk"/>
+                        <outlet property="orSimplyLabel" destination="QAf-OG-LFZ" id="tS5-ER-dJc"/>
+                        <outlet property="originalTotalLabel" destination="AmU-mt-0uY" id="Wf3-h4-Hgv"/>
+                        <outlet property="originalTotalTextField" destination="rYU-Em-xv8" id="lrZ-R8-OP3"/>
+                        <outlet property="plusLabel" destination="1Fo-Cj-pud" id="hvy-tW-B02"/>
+                        <outlet property="preReleaseNotifierLabel" destination="Xet-AD-U4B" id="n4g-Yz-Kag"/>
+                        <outlet property="screenShotView" destination="IYY-fK-A7D" id="TDh-mh-vNq"/>
+                        <outlet property="secondBorderView" destination="8pm-IM-aoc" id="OGh-MH-StD"/>
+                        <outlet property="secondSeparatorView" destination="qxD-Wx-6Ag" id="yGZ-GB-lJS"/>
+                        <outlet property="skuLabel" destination="4Y8-o7-g2j" id="NZB-su-2y8"/>
+                        <outlet property="skuLabelSubtitleLabel" destination="tGL-A4-eRm" id="LLc-Ps-7GE"/>
+                        <outlet property="thirdBorderView" destination="dYf-nw-SWT" id="OdP-Rw-01V"/>
+                        <outlet property="tipOfSegmentedControl" destination="3sE-Hg-FIa" id="pv3-Wt-k4L"/>
+                        <outlet property="titleLabel" destination="kmU-fY-poD" id="bg2-7y-8A9"/>
+                        <outlet property="topDesignationLabel" destination="mzF-OV-dm4" id="sel-9G-cRc"/>
+                        <outlet property="topSkuLabel" destination="RH9-c7-qOw" id="Vb7-Py-Gby"/>
+                        <outlet property="topVersionLabel" destination="gDj-Y5-lSz" id="L9e-zZ-VL5"/>
+                        <outlet property="yourTipLabel" destination="HBS-EK-Xeb" id="Ae7-Pj-ob0"/>
+                        <outlet property="yourTipPlaceholderLabel" destination="OqB-FO-5Y7" id="jZD-eE-zaq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="Z94-qB-3sS">
+                    <connections>
+                        <action selector="longPress:" destination="BYZ-38-t0r" id="Xkx-Bj-3HH"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <tapGestureRecognizer id="a3O-19-B9K">
+                    <connections>
+                        <action selector="tapGestureRecogniser:" destination="BYZ-38-t0r" id="vcR-QI-gwQ"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="184" y="372"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="NT.png" width="996" height="545"/>
+    </resources>
+</document>
