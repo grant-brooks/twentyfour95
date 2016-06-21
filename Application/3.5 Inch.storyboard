@@ -5,7 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <customFonts key="customFonts">
-        <mutableArray key="DS-DIGI.TTF">
+        <mutableArray key="DS-Digital.ttf">
             <string>DS-Digital</string>
             <string>DS-Digital</string>
             <string>DS-Digital</string>
@@ -19,7 +19,7 @@
             <string>DS-Digital</string>
             <string>DS-Digital</string>
         </mutableArray>
-        <mutableArray key="digital-7.ttf">
+        <mutableArray key="Digital-7.ttf">
             <string>Digital-7</string>
             <string>Digital-7</string>
             <string>Digital-7</string>
@@ -72,22 +72,22 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2401-APP-0941" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fBR-Sr-jMi">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2401-APP-10941" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fBR-Sr-jMi">
                                 <rect key="frame" x="35" y="460" width="100" height="15"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="10"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Generation:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8P7-Kq-Rf0">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Designation:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8P7-Kq-Rf0">
                                 <rect key="frame" x="5" y="430" width="73" height="15"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="11"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1st" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="zRy-w8-bb7">
-                                <rect key="frame" x="69" y="430" width="100" height="15"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="INT-TES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="zRy-w8-bb7">
+                                <rect key="frame" x="74" y="430" width="100" height="15"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="10"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -142,7 +142,7 @@
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2401-APP-0941" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4PW-EC-Za9">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2401-APP-10941" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4PW-EC-Za9">
                                         <rect key="frame" x="62" y="0.0" width="211" height="20"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -154,8 +154,8 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1st" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tls-I1-nQ0">
-                                        <rect key="frame" x="266" y="0.0" width="54" height="20"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="INT-TES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tls-I1-nQ0">
+                                        <rect key="frame" x="257" y="0.0" width="63" height="20"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
@@ -392,13 +392,13 @@
                         <outlet property="bundleVersionLabel" destination="WuX-jU-m70" id="hgM-dp-8lt"/>
                         <outlet property="bundleVersionSubtitleLabel" destination="4fM-Lf-qbx" id="8vi-MQ-Q4z"/>
                         <outlet property="codeNameButton" destination="qdj-rM-fem" id="ONL-Rf-IfT"/>
+                        <outlet property="designationLabel" destination="8P7-Kq-Rf0" id="oe2-G9-a2l"/>
+                        <outlet property="designationSubtitleLabel" destination="zRy-w8-bb7" id="LVE-Mu-Snm"/>
                         <outlet property="equalsLabel" destination="PaV-e0-tSq" id="Uro-Yc-tjV"/>
                         <outlet property="fifthBorderView" destination="9R1-fM-X7b" id="SAp-WJ-1gS"/>
                         <outlet property="firstBorderView" destination="4ac-Sc-Amn" id="GKw-1q-Lhi"/>
                         <outlet property="firstSeparatorView" destination="5mj-A0-N7Z" id="JPX-tH-o0l"/>
                         <outlet property="fourthBorderView" destination="DVc-8T-UQB" id="Qnf-wC-QAl"/>
-                        <outlet property="generationLabel" destination="8P7-Kq-Rf0" id="wfZ-QW-5xa"/>
-                        <outlet property="generationLabelSubtitleLabel" destination="zRy-w8-bb7" id="dxb-VX-GTk"/>
                         <outlet property="grandTotalLabel" destination="d86-Y8-wyH" id="lda-vD-NCI"/>
                         <outlet property="informationButton" destination="QeO-X2-Vbj" id="ZMf-lk-t6p"/>
                         <outlet property="longPress" destination="RgD-iC-apJ" id="c7R-dg-OqP"/>
@@ -416,7 +416,7 @@
                         <outlet property="skuLabelSubtitleLabel" destination="fBR-Sr-jMi" id="2T8-I2-gVy"/>
                         <outlet property="thirdBorderView" destination="L3T-Ji-dfZ" id="NuJ-fI-KSb"/>
                         <outlet property="tipOfSegmentedControl" destination="RdG-dY-VYY" id="rqJ-4m-RBe"/>
-                        <outlet property="topGenerationLabel" destination="tls-I1-nQ0" id="bL9-Ej-wyH"/>
+                        <outlet property="topDesignationLabel" destination="tls-I1-nQ0" id="OFa-SH-95D"/>
                         <outlet property="topSkuLabel" destination="4PW-EC-Za9" id="cvB-m5-ycj"/>
                         <outlet property="topVersionLabel" destination="liw-6e-0Tc" id="vdk-83-Ntf"/>
                         <outlet property="yourTipLabel" destination="nKU-W5-G17" id="PmI-5l-bwk"/>
@@ -435,7 +435,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="123" y="342"/>
+            <point key="canvasLocation" x="117" y="342"/>
         </scene>
     </scenes>
     <resources>

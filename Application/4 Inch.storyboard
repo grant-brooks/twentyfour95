@@ -5,7 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <customFonts key="customFonts">
-        <mutableArray key="DS-DIGI.TTF">
+        <mutableArray key="DS-Digital.ttf">
             <string>DS-Digital</string>
             <string>DS-Digital</string>
             <string>DS-Digital</string>
@@ -19,7 +19,7 @@
             <string>DS-Digital</string>
             <string>DS-Digital</string>
         </mutableArray>
-        <mutableArray key="digital-7.ttf">
+        <mutableArray key="Digital-7.ttf">
             <string>Digital-7</string>
             <string>Digital-7</string>
             <string>Digital-7</string>
@@ -85,22 +85,22 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2401-APP-0941" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="q8U-L2-23B">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2401-APP-10941" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="q8U-L2-23B">
                                 <rect key="frame" x="35" y="548" width="100" height="15"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="10"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Generation:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cUT-4X-eOI">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Designation:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cUT-4X-eOI">
                                 <rect key="frame" x="5" y="518" width="73" height="15"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="11"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1st" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tyC-5u-jq9">
-                                <rect key="frame" x="69" y="518" width="100" height="15"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="INT-TES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tyC-5u-jq9">
+                                <rect key="frame" x="74" y="518" width="100" height="15"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="10"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -142,7 +142,7 @@
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2401-APP-0941" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ugJ-UH-bwh">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2401-APP-10941" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ugJ-UH-bwh">
                                         <rect key="frame" x="62" y="0.0" width="211" height="20"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -154,8 +154,8 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1st" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="BI6-l0-PYw">
-                                        <rect key="frame" x="266" y="0.0" width="54" height="20"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="INT-TES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="BI6-l0-PYw">
+                                        <rect key="frame" x="257" y="0.0" width="63" height="20"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
@@ -390,13 +390,13 @@
                         <outlet property="bundleVersionLabel" destination="P4O-23-dV4" id="kFu-N2-mYv"/>
                         <outlet property="bundleVersionSubtitleLabel" destination="P8c-bv-o9c" id="rxZ-kJ-8QL"/>
                         <outlet property="codeNameButton" destination="19A-We-IrS" id="nAF-q4-7BS"/>
+                        <outlet property="designationLabel" destination="cUT-4X-eOI" id="YgO-SV-ezC"/>
+                        <outlet property="designationSubtitleLabel" destination="tyC-5u-jq9" id="4h1-DQ-pfN"/>
                         <outlet property="equalsLabel" destination="HrQ-LZ-zXl" id="aZg-C8-ToA"/>
                         <outlet property="fifthBorderView" destination="NeY-s6-FN6" id="eNb-78-0vV"/>
                         <outlet property="firstBorderView" destination="CAR-gq-pmF" id="guH-Qy-nlf"/>
                         <outlet property="firstSeparatorView" destination="XCX-or-nen" id="SRn-t4-RVY"/>
                         <outlet property="fourthBorderView" destination="C0W-NN-MmS" id="5Wr-FE-2LX"/>
-                        <outlet property="generationLabel" destination="cUT-4X-eOI" id="FvI-cH-LKp"/>
-                        <outlet property="generationLabelSubtitleLabel" destination="tyC-5u-jq9" id="qVF-Db-JuW"/>
                         <outlet property="grandTotalLabel" destination="HDy-xZ-HbE" id="4Mf-97-yM2"/>
                         <outlet property="informationButton" destination="hS3-UG-LJ3" id="Od5-of-fUK"/>
                         <outlet property="longPress" destination="zaF-WH-CW5" id="fT3-cB-d6K"/>
@@ -414,7 +414,7 @@
                         <outlet property="skuLabelSubtitleLabel" destination="q8U-L2-23B" id="zjX-9f-MwC"/>
                         <outlet property="thirdBorderView" destination="DGc-o9-aUJ" id="twt-dL-tIi"/>
                         <outlet property="tipOfSegmentedControl" destination="Mj7-fL-ShR" id="gdi-7h-fB8"/>
-                        <outlet property="topGenerationLabel" destination="BI6-l0-PYw" id="DZr-pA-icS"/>
+                        <outlet property="topDesignationLabel" destination="BI6-l0-PYw" id="8w1-GG-ah1"/>
                         <outlet property="topSkuLabel" destination="ugJ-UH-bwh" id="gkM-oC-pir"/>
                         <outlet property="topVersionLabel" destination="ADG-Wq-R0K" id="gLK-lo-PMg"/>
                         <outlet property="yourTipLabel" destination="yKB-o0-FdB" id="MuF-bV-eK7"/>

@@ -329,7 +329,7 @@ class MC: UIViewController
     {
         topVersionLabel.text = formattedVersionNumber
         topSkuLabel.text = applicationSku
-        topDesignationLabel.text = designationLabel.text!
+        topDesignationLabel.text = designationSubtitleLabel.text!
         
         if shouldTakeScreenShot == true || uploadArray.count > 0
         {
