@@ -21,14 +21,16 @@ The interface design of **twentyfour95** is modern and yet simple in a way that 
 
 ---------------------------------------------------------------------------------------------------------------------
 
-#Update 3.4.12
+#Update 3.4.13
 ######X X, 20XX
-**SKU:** 2306-TEL-10638
+**SKU:** 2306-TEL-10660
 
 
 ##Changes in this Version
 
 • Increased the maximum total value from $83.33 to $833.33.
+
+• Allowed for a greater maximum monetary picker value.
 
 • Minor user interface tweaks/changes.
 
