@@ -102,13 +102,14 @@ class MC: UIViewController
     var uploadedScreenShot:        Bool! = false
     
     //Integer Objects
-    let buildNumber =        Int(NSBundle.mainBundle().infoDictionary!["CFBundleVersion"] as! String)! + 1
+    //let buildNumber =                   Int(NSBundle.mainBundle().infoDictionary!["CFBundleVersion"] as! String)! + 1
+    let buildNumber =                   Int(NSBundle.mainBundle().infoDictionary!["CFBundleVersion"] as! String)!
     
-    var applicationGenerationAsInteger:    Int!
-    var bugFixReleaseNumber:               Int!
-    var minorReleaseNumber:                Int!
-    var newFirstNumber:                    Int!
-    var versionChoice:                     Int! = 0
+    var applicationGenerationAsInteger: Int!
+    var bugFixReleaseNumber:            Int!
+    var minorReleaseNumber:             Int!
+    var newFirstNumber:                 Int!
+    var versionChoice:                  Int! = 0
     
     //String Objects
     var applicationCodeName:      String!
@@ -137,6 +138,7 @@ class MC: UIViewController
             //The value of the pre-release application boolean.
             //The boolean value determining whether or not the application is ad-hoc.
             //The first digit in the formatted version number.
+            //The build number string when archiving.
         
         //Make variables declared in the app delegate accesible.
         let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
@@ -149,7 +151,7 @@ class MC: UIViewController
         //Declare whether the application is a pre-release version or not, and the project code name.
         applicationCodeName = "Telluride"
         codeNameButton.setTitle("Project Code Name: " + applicationCodeName, forState: .Normal)
-        preReleaseApplication = true
+        preReleaseApplication = false
         isAdHocDistribution = false
         
         //Declare and set user defaults.
@@ -207,7 +209,7 @@ class MC: UIViewController
         preReleaseNotifierLabel.text = preReleaseNotifierString
         
         //Format the version number for later display.
-        formattedVersionNumber = "2." + String(minorReleaseNumber) + "." + String(bugFixReleaseNumber)
+        formattedVersionNumber = "3." + String(minorReleaseNumber) + "." + String(bugFixReleaseNumber)
         
         //Determine what is displayed on the 'buildButton' button.
         if versionChoice == 0
@@ -279,7 +281,7 @@ class MC: UIViewController
         originalTotalTextField.layer.borderWidth = 3
         originalTotalTextField.layer.cornerRadius = 4
         originalTotalTextField.attributedPlaceholder = NSAttributedString(string: "$24.95",
-                                                               attributes:[NSForegroundColorAttributeName: colorWithHexString("3c4a4f")])
+                                                                          attributes:[NSForegroundColorAttributeName: colorWithHexString("3c4a4f")])
         originalTotalTextField.font = UIFont(name: "DS-Digital", size: 16)
         originalTotalTextField.layer.borderColor = colorWithHexString("3c4a4f").CGColor
         originalTotalTextField.addTarget(self, action: #selector(MC.textFieldDidChange(_:)), forControlEvents: UIControlEvents.EditingChanged)
@@ -291,7 +293,7 @@ class MC: UIViewController
         plusLabel.alpha = 0.0
         equalsLabel.alpha = 0.0
         secondSeparatorView.alpha = 0.0
- 
+        
         firstBorderView.layer.borderWidth = 3
         firstBorderView.layer.cornerRadius = 4
         firstBorderView.layer.borderColor = colorWithHexString("3c4a4f").CGColor
@@ -494,7 +496,7 @@ class MC: UIViewController
     
     @IBAction func tipOfSegmentedControl(sender: AnyObject)
     {
-        let originalTotalAsDouble = Double(originalTotalTextField.text!.stringByReplacingOccurrencesOfString("$", withString: ""))
+        let originalTotalAsDouble = Double(originalTotalTextField.text!.stringByReplacingOccurrencesOfString("$", withString: "").stringByReplacingOccurrencesOfString(",", withString: ""))
         
         let currencyFormatter = NSNumberFormatter()
         currencyFormatter.numberStyle = .CurrencyStyle
@@ -594,14 +596,14 @@ class MC: UIViewController
     
     func textFieldDidChange(textField: UITextField)
     {
-        textField.text! = textField.text!.stringByReplacingOccurrencesOfString("$", withString: "")
+        textField.text! = textField.text!.stringByReplacingOccurrencesOfString("$", withString: "").stringByReplacingOccurrencesOfString(",", withString: "")
         
         if !textField.text!.hasPrefix("$")
         {
             textField.text = "$" + textField.text!
         }
         
-        if textField.text!.stringByReplacingOccurrencesOfString("$", withString: "").length > 2 && !textField.text!.containsString(".")
+        if textField.text!.stringByReplacingOccurrencesOfString("$", withString: "").stringByReplacingOccurrencesOfString(",", withString: "").length > 3 && !textField.text!.containsString(".")
         {
             textField.text = textField.text!.chopSuffix(1)
         }
@@ -610,7 +612,7 @@ class MC: UIViewController
         {
             let stringArray = textField.text!.characters.split{$0 == "."}.map(String.init)
             
-            let dollarsString = stringArray[0].stringByReplacingOccurrencesOfString("$", withString: "")
+            let dollarsString = stringArray[0]
             let centsString = stringArray[1]
             
             if centsString.characters.count > 2
@@ -618,7 +620,7 @@ class MC: UIViewController
                 textField.text = textField.text!.chopSuffix(1)
             }
             
-            if dollarsString.characters.count > 2
+            if centsString.characters.count > 3
             {
                 textField.text = dollarsString.chopSuffix(1) + "." + centsString
             }
@@ -634,7 +636,7 @@ class MC: UIViewController
             textField.text! = ""
         }
         
-        if Double(textField.text!.stringByReplacingOccurrencesOfString("$", withString: "")) > 83.33
+        if Double(textField.text!.stringByReplacingOccurrencesOfString("$", withString: "").stringByReplacingOccurrencesOfString(",", withString: "")) > 833.33
         {
             numberIsInvalid = true
         }
@@ -657,7 +659,7 @@ class MC: UIViewController
                         {
                             self.fourthBorderView.frame.origin.x = 7
                         }
-                
+                        
                         self.fifthBorderView.alpha = 1.0
                         
                         if UIScreen.mainScreen().bounds.height != 568 && UIScreen.mainScreen().bounds.height != 480 && UIScreen.mainScreen().bounds.height != 667
@@ -679,7 +681,7 @@ class MC: UIViewController
                         {
                             self.fourthBorderView.frame.origin.x = 107
                         }
-            
+                        
                         self.firstBorderView.alpha = 0.0
                         self.secondBorderView.alpha = 0.0
                         self.thirdBorderView.alpha = 0.0
@@ -734,7 +736,7 @@ class MC: UIViewController
     
     func adjustForTotalChange()
     {
-        let originalTotalAsDouble = Double(originalTotalTextField.text!.stringByReplacingOccurrencesOfString("$", withString: ""))
+        let originalTotalAsDouble = Double(originalTotalTextField.text!.stringByReplacingOccurrencesOfString("$", withString: "").stringByReplacingOccurrencesOfString(",", withString: ""))
         
         let currencyFormatter = NSNumberFormatter()
         currencyFormatter.numberStyle = .CurrencyStyle
@@ -789,7 +791,28 @@ class MC: UIViewController
             nearestDollar = nearestDollar + 1
         }
         
-        numberArray = (nearestDollar...100).map { $0 }
+        let twentyPercentOfNumber = originalTotal * 0.20
+        
+        let maximumGrandTotal = originalTotal! + twentyPercentOfNumber
+        let maximumRoundedAmount = round(100.0 * maximumGrandTotal) / 100.0
+        
+        var maximumNearestDollar = Int(maximumRoundedAmount)
+        
+        if maximumRoundedAmount % Double(Int(maximumRoundedAmount)) != 0
+        {
+            maximumNearestDollar = maximumNearestDollar + 1
+        }
+        
+        if (originalTotal + twentyPercentOfNumber) >= 100
+        {
+            numberArray = (nearestDollar...(maximumNearestDollar + 100)).map { $0 }
+            numberPickerView.reloadAllComponents()
+        }
+        else
+        {
+            numberArray = (nearestDollar...200).map { $0 }
+            numberPickerView.reloadAllComponents()
+        }
         
         return roundedAmount
     }
@@ -820,9 +843,13 @@ class MC: UIViewController
             pickerLabel?.font = UIFont(name: "DS-Digital", size: 23)
             pickerLabel?.textColor = colorWithHexString("DCDCE0")
             pickerLabel?.textAlignment = NSTextAlignment.Center
+            pickerLabel?.adjustsFontSizeToFitWidth = true
         }
         
-        pickerLabel?.text = "$" + String(numberArray[row])
+        if (numberArray.count - 1) >= row
+        {
+            pickerLabel?.text = "$" + String(numberArray[row])
+        }
         
         return pickerLabel!
     }
@@ -838,66 +865,69 @@ class MC: UIViewController
     
     func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int)
     {
-        let askForAmountBackDouble = Double(numberArray[row]) - unformattedGrandTotal
-        let roundedAmount = round(100.0 * askForAmountBackDouble) / 100.0
-        
-        titleOfSelectedRow = String(numberArray[row])
-        
-        let currencyFormatter = NSNumberFormatter()
-        currencyFormatter.numberStyle = .CurrencyStyle
-        currencyFormatter.locale = NSLocale(localeIdentifier: "es_US")
-        
-        askForLabel.text = String(currencyFormatter.stringFromNumber(roundedAmount)!)
-        
-        if String(Int(roundedAmount)) == "0"
+        if (numberArray.count - 1) >= row
         {
-            askForRoundedLabel.text = "nothing"
-        }
-        else
-        {
-            switch Int(roundedAmount) % 10
+            let askForAmountBackDouble = Double(numberArray[row]) - unformattedGrandTotal
+            let roundedAmount = round(100.0 * askForAmountBackDouble) / 100.0
+            
+            titleOfSelectedRow = String(numberArray[row])
+            
+            let currencyFormatter = NSNumberFormatter()
+            currencyFormatter.numberStyle = .CurrencyStyle
+            currencyFormatter.locale = NSLocale(localeIdentifier: "es_US")
+            
+            askForLabel.text = String(currencyFormatter.stringFromNumber(roundedAmount)!)
+            
+            if String(Int(roundedAmount)) == "0"
             {
-            case 1...2:
-                
-                if Int(roundedAmount) != 1 && Int(roundedAmount) != 2
+                askForRoundedLabel.text = "nothing"
+            }
+            else
+            {
+                switch Int(roundedAmount) % 10
                 {
+                case 1...2:
+                    
+                    if Int(roundedAmount) != 1 && Int(roundedAmount) != 2
+                    {
+                        var newNumberAsString = String(Int(roundedAmount)).chopSuffix(1)
+                        
+                        newNumberAsString = newNumberAsString + "0"
+                        
+                        askForRoundedLabel.text = "$" + newNumberAsString
+                    }
+                    else
+                    {
+                        askForRoundedLabel.text = "$" + String(Int(roundedAmount))
+                    }
+                    
+                case 3...7:
                     var newNumberAsString = String(Int(roundedAmount)).chopSuffix(1)
+                    
+                    newNumberAsString = newNumberAsString + "5"
+                    
+                    askForRoundedLabel.text = "$" + newNumberAsString
+                    
+                case 8...9:
+                    
+                    var newFirstNumber = Int(roundedAmount) / 10
+                    
+                    newFirstNumber = newFirstNumber + 1
+                    
+                    var newNumberAsString = String(newFirstNumber)
                     
                     newNumberAsString = newNumberAsString + "0"
                     
                     askForRoundedLabel.text = "$" + newNumberAsString
-                }
-                else
-                {
+                    
+                default:
                     askForRoundedLabel.text = "$" + String(Int(roundedAmount))
                 }
                 
-            case 3...7:
-                var newNumberAsString = String(Int(roundedAmount)).chopSuffix(1)
-                
-                newNumberAsString = newNumberAsString + "5"
-                
-                askForRoundedLabel.text = "$" + newNumberAsString
-                
-            case 8...9:
-                
-                var newFirstNumber = Int(roundedAmount) / 10
-                
-                newFirstNumber = newFirstNumber + 1
-                
-                var newNumberAsString = String(newFirstNumber)
-                
-                newNumberAsString = newNumberAsString + "0"
-                
-                askForRoundedLabel.text = "$" + newNumberAsString
-                
-            default:
-                askForRoundedLabel.text = "$" + String(Int(roundedAmount))
-            }
-            
-            if Int(askForRoundedLabel.text!.stringByReplacingOccurrencesOfString("$", withString: "")) > numberArray[numberPickerView.selectedRowInComponent(0)]
-            {
-                askForRoundedLabel.text! = "$" + String(Int(Double(askForLabel.text!.stringByReplacingOccurrencesOfString("$", withString: ""))!))
+                if Int(askForRoundedLabel.text!.stringByReplacingOccurrencesOfString("$", withString: "").stringByReplacingOccurrencesOfString(",", withString: "")) > numberArray[numberPickerView.selectedRowInComponent(0)]
+                {
+                    askForRoundedLabel.text! = "$" + String(Int(Double(askForLabel.text!.stringByReplacingOccurrencesOfString("$", withString: "").stringByReplacingOccurrencesOfString(",", withString: ""))!))
+                }
             }
         }
     }
