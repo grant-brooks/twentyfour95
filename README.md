@@ -59,7 +59,7 @@ The interface design of **twentyfour95** is modern and yet simple in a way that 
 
 ---------------------------------------------------------------------------------------------------------------------
 
-######All information is pulled from twentyfour95's page on the iOS App Store. You can visit this page [here] (http://www.neotechnica.us).
+######All information is pulled from twentyfour95's page on the iOS App Store. You can visit this page [here] (https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=1125863025&mt=8).
 
 ---------------------------------------------------------------------------------------------------------------------
 
