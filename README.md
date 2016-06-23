@@ -45,7 +45,7 @@ The interface design of **twentyfour95** is modern and yet simple in a way that 
 
 • Fixed bug in which in certain cases, the rounded amount to ask back was more than was originally given.
 
-• The monetary picker view now resets back to the first available value when entering a new value.
+• The monetary picker view now resets back to the first available value when entering a new original total.
 
 • The amount to ask back now dynamically updates when the original total value is changed.
 
