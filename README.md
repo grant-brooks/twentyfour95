@@ -21,6 +21,21 @@ The interface design of **twentyfour95** is modern and yet simple in a way that 
 
 ---------------------------------------------------------------------------------------------------------------------
 
+#Update 3.4.12
+######X X, 20XX
+**SKU:** 2306-TEL-10635
+
+
+##Changes in this Version
+
+• Increased the maximum total value from $83.33 to $833.33.
+
+• Minor user interface tweaks/changes.
+
+• *Various bug fixes.*
+
+---------------------------------------------------------------------------------------------------------------------
+
 #Update 2.4.12
 ######X X, 20XX
 **SKU:** XXXX-TEL-XXXXX
