@@ -21,9 +21,24 @@ The interface design of **twentyfour95** is modern and yet simple in a way that 
 
 ---------------------------------------------------------------------------------------------------------------------
 
+#Update 4.4.13
+######July 1, 2016
+**SKU:** 3006-TEL-010660
+
+
+##Changes in this Version
+
+• Fixed a bug that caused the application to crash for users of iPhone 6/6s.
+
+• *Minor user interface tweaks/changes.*
+
+• *Various bug fixes.*
+
+---------------------------------------------------------------------------------------------------------------------
+
 #Update 3.4.13
-######X X, 20XX
-**SKU:** 2306-TEL-10660
+######June 27, 2016
+**SKU:** 2306-TEL-010660
 
 
 ##Changes in this Version
@@ -32,15 +47,15 @@ The interface design of **twentyfour95** is modern and yet simple in a way that 
 
 • Allowed for a greater maximum monetary picker value.
 
-• Minor user interface tweaks/changes.
+• *Minor user interface tweaks/changes.*
 
 • *Various bug fixes.*
 
 ---------------------------------------------------------------------------------------------------------------------
 
 #Update 2.4.12
-######X X, 20XX
-**SKU:** XXXX-TEL-XXXXX
+######June 24, 2016
+**SKU:** 2206-TEL-010615
 
 
 ##Changes in this Version
@@ -53,7 +68,7 @@ The interface design of **twentyfour95** is modern and yet simple in a way that 
 
 • Strengthened limitations on enterable characters in the original total text field.
 
-• Minor user interface tweaks/changes.
+• *Minor user interface tweaks/changes.*
 
 • *Various other bug fixes.*
 
@@ -63,7 +78,7 @@ The interface design of **twentyfour95** is modern and yet simple in a way that 
 
 ---------------------------------------------------------------------------------------------------------------------
 
-#####Telluride | 1706-TEL-00009
+#####Telluride | 1706-TEL-000009
 
 **Copyright © 2016 NEOTechnica Corporation  
 All rights reserved.**
